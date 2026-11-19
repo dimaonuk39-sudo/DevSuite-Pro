@@ -17,6 +17,8 @@
 
 - [Windows EXE, портативная версия 1.0.0](https://github.com/dimaonuk39-sudo/DevSuite-Pro/releases/latest/download/DevSuite-Pro-1.0.0.exe)
 - [Android APK 1.0.0](https://github.com/dimaonuk39-sudo/DevSuite-Pro/releases/latest/download/DevSuitePro-1.0.0.apk)
+- [Архив исходников 1.0.0](https://github.com/dimaonuk39-sudo/DevSuite-Pro/releases/latest/download/DevSuite-Pro-1.0.0-source.zip)
+- [Контрольные суммы SHA256](https://github.com/dimaonuk39-sudo/DevSuite-Pro/releases/latest/download/SHA256SUMS.txt)
 
 ## Состав поставки
 
