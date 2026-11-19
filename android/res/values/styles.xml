@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">#07090f</item>
+        <item name="android:colorBackground">#07090f</item>
+        <item name="android:colorAccent">#7c5cff</item>
+        <item name="android:statusBarColor">#07090f</item>
+        <item name="android:navigationBarColor">#07090f</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

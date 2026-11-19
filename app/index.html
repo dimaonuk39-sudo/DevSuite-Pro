@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' file:; script-src 'self' file:; style-src 'self' file: 'unsafe-inline'; img-src 'self' file: data: blob:; font-src 'self' file: data:; connect-src *; media-src 'self' file: blob: data:; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>DevSuite Pro — инструменты разработчика</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
+</head>
+<body>
+<div class="app" id="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand" id="brand">
+      <div class="brand-logo">
+        <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true">
+          <defs><linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs>
+          <rect x="1" y="1" width="30" height="30" rx="9" fill="url(#lg1)" opacity=".18"/>
+          <path d="M10 11l-4 5 4 5M22 11l4 5-4 5M18.5 8l-5 16" fill="none" stroke="url(#lg1)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div>
+        <div class="brand-name">DevSuite <span>Pro</span></div>
+        <div class="brand-sub">developer toolbox</div>
+      </div>
+    </div>
+
+    <nav class="nav" id="sidebarNav">
+      <button class="nav-item is-active" data-nav="home">
+        <span class="nav-ico">⌂</span><span>Главная</span>
+      </button>
+      <div class="nav-label">Инструменты</div>
+      <div id="navCategories"></div>
+      <div class="nav-label">Приложение</div>
+      <button class="nav-item" data-nav="settings"><span class="nav-ico">⚙</span><span>Настройки</span></button>
+      <button class="nav-item" data-nav="about"><span class="nav-ico">ⓘ</span><span>О программе</span></button>
+    </nav>
+
+    <div class="sidebar-foot">
+      <div class="build-pill"><span class="dot"></span><span id="platformLabel">Desktop</span></div>
+      <div class="muted small" id="toolCountLabel"></div>
+    </div>
+  </aside>
+
+  <div class="scrim" id="scrim"></div>
+
+  <main class="main">
+    <header class="topbar">
+      <button class="icon-btn only-mobile" id="menuBtn" aria-label="Меню">☰</button>
+      <div class="crumbs" id="crumbs"><span>Главная</span></div>
+      <div class="topbar-actions">
+        <button class="search-trigger" id="searchTrigger">
+          <span class="search-ico">⌕</span>
+          <span class="search-text">Поиск инструментов</span>
+          <kbd>Ctrl K</kbd>
+        </button>
+        <button class="icon-btn" id="themeBtn" title="Светлая/тёмная тема" aria-label="Тема">◐</button>
+        <button class="btn btn-primary btn-sm only-desktop" id="aiQuick">✦ AI Chat</button>
+      </div>
+    </header>
+
+    <div class="view" id="view"></div>
+  </main>
+</div>
+
+<div class="palette" id="palette" hidden>
+  <div class="palette-backdrop" data-close-palette></div>
+  <div class="palette-panel">
+    <div class="palette-input-wrap">
+      <span class="search-ico">⌕</span>
+      <input id="paletteInput" class="palette-input" placeholder="Найти инструмент: json, api, telegram, hash…" autocomplete="off">
+      <kbd>Esc</kbd>
+    </div>
+    <div class="palette-results" id="paletteResults"></div>
+    <div class="palette-foot"><span>↑ ↓ — выбор</span><span>Enter — открыть</span><span id="paletteCount"></span></div>
+  </div>
+</div>
+
+<div class="toasts" id="toasts"></div>
+
+<script src="js/vendor/js-yaml.min.js"></script>
+<script src="js/vendor/marked.min.js"></script>
+<script src="js/vendor/qrcode.js"></script>
+<script src="js/vendor/jsQR.js"></script>
+<script src="js/vendor/JsBarcode.all.min.js"></script>
+<script src="js/core.js"></script>
+<script src="js/tools-data.js"></script>
+<script src="js/tools-data2.js"></script>
+<script src="js/tools-data3.js"></script>
+<script src="js/tools-text.js"></script>
+<script src="js/tools-text2.js"></script>
+<script src="js/tools-gen.js"></script>
+<script src="js/tools-gen2.js"></script>
+<script src="js/tools-gen3.js"></script>
+<script src="js/tools-web-http.js"></script>
+<script src="js/tools-web-ai.js"></script>
+<script src="js/tools-web-tg.js"></script>
+<script src="js/tools-web-ws.js"></script>
+<script src="js/tools-misc.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

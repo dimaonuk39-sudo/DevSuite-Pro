@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="DevSuite Pro">
+  <defs>
+    <linearGradient id="dsGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c5cff"/>
+      <stop offset=".62" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#0f1320"/>
+    </linearGradient>
+    <linearGradient id="dsGlyph" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#c9f7ff"/>
+    </linearGradient>
+    <filter id="dsGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect x="4" y="4" width="248" height="248" rx="58" fill="url(#dsGrad)"/>
+  <rect x="14" y="14" width="228" height="228" rx="50" fill="#090c16" opacity=".35"/>
+  <rect x="16" y="16" width="224" height="224" rx="48" fill="none" stroke="#ffffff" stroke-opacity=".12" stroke-width="1.5"/>
+  <g fill="none" stroke="url(#dsGlyph)" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" filter="url(#dsGlow)">
+    <path d="M100 82 71 128l29 46"/>
+    <path d="M156 82l29 46-29 46"/>
+    <path d="M145 69l-34 118"/>
+  </g>
+  <circle cx="188" cy="188" r="10" fill="#22d3ee"/>
+  <circle cx="188" cy="188" r="4.5" fill="#090c16"/>
+</svg>

@@ -1,0 +1,31 @@
+# dependencies and local toolchain
+node_modules/
+toolchain/
+
+# build output
+dist/
+android/build/
+android/assets/
+*.exe
+*.apk
+*.idsig
+*-source.zip
+
+# secrets and signing keys
+*.keystore
+*.jks
+.env
+.env.*
+
+# logs and test artifacts
+*.log
+smoke-report.json
+http-report.json
+test2.out
+write-test.txt
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

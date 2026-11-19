@@ -1,0 +1,29 @@
+{
+  "name": "devsuite-pro",
+  "version": "1.0.0",
+  "description": "DevSuite Pro - offline developer toolbox with API, AI and Telegram clients",
+  "main": "main.js",
+  "author": "DevSuite",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win portable"
+  },
+  "devDependencies": {
+    "electron": "33.4.11",
+    "electron-builder": "25.1.8"
+  },
+  "build": {
+    "appId": "pro.devsuite.app",
+    "productName": "DevSuite Pro",
+    "artifactName": "DevSuite-Pro-${version}.exe",
+    "compression": "normal",
+    "files": ["main.js", "preload.js", "app/**/*", "package.json"],
+    "win": {
+      "target": [{"target": "portable", "arch": ["x64"]}],
+      "icon": "build/icon.ico",
+      "signAndEditExecutable": false
+    },
+    "portable": {"artifactName": "DevSuite-Pro-${version}.exe"}
+  }
+}
